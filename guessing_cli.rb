@@ -6,11 +6,11 @@ def run_guessing_game
   if input.downcase == "exit"
     puts "Goodbye!"
     return
-    elsif random_num == input 
+    elsif random_num.to_i == input 
     # puts "The computer guessed #{random_num}"
      puts "You guessed the correct number!"
     run_guessing_game
-  elsif input != random_num
+  elsif input != random_num.to+i
     puts "The computer guessed #{random_num}."
     run_guessing_game
   end
