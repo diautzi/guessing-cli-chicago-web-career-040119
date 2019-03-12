@@ -7,7 +7,7 @@ def run_guessing_game
     puts "Goodbye!"
     return
     
-  elsif input+to_i != random_num
+  elsif input.to_i != random_num
     puts "The computer guessed #{random_num}."
     run_guessing_game
     elsif random_num.to_i == input.to_i
